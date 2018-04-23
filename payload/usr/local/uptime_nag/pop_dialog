@@ -1,0 +1,9 @@
+#!/usr/bin/osascript
+
+tell application "System Events"
+    display dialog "It looks like your computer has been up for over a month - please reboot!" buttons {"Reboot now", "Cancel"}
+
+    if button returned of result = "Reboot now" then
+        tell application "System Events" to restart
+    end if
+end tell

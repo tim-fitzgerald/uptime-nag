@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sudo chown root /Library/LaunchAgents/com.github.uptimenag.plist
+sudo chmod 644 /Library/LaunchAgents/com.github.uptimenag.plist
+sudo chmod 755 /usr/local/uptime_nag/check_uptime.py
+sudo chmod 755 /usr/local/uptime_nag/pop_dialog
+sudo mkdir /ApplicationSupport/UptimeNag/
+sudo launchctl load -w /Library/LaunchAgents/com.github.uptimenag.plist
+

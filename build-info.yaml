@@ -1,0 +1,11 @@
+distribution_style: true
+identifier: com.github.uptimenag
+install_location: /
+name: uptime_nag-${version}.pkg
+ownership: recommended
+postinstall_action: none
+suppress_bundle_relocation: true
+version: '1.0'
+signing_info:
+  identity: "<Literal Developer ID>"
+  timestamp: true
